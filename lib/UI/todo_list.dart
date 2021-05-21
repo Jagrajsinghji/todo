@@ -24,6 +24,7 @@ class _ToDoListState extends State<ToDoList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(111, 194, 173, 1.0),
       body: isLoading
           ? Center(child: CircularProgressIndicator())
           : retry
@@ -34,10 +35,44 @@ class _ToDoListState extends State<ToDoList> {
                   itemCount: _tasks.length,
                   itemBuilder: (c, index) {
                     Task task = _tasks.elementAt(index);
-                    return ListTile(
-                      title: Text("${task.subject}"),
-                      subtitle: Text("${task.description}"),
+                    return Container(
+                      margin: EdgeInsets.all(20.0),
+                      height: 250.0,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10.0)
+                      ),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 280.0,top: 15.0,bottom: 15.0),
+                            child: Container(
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 8.0,right: 16.0),
+                                    child: Icon(Icons.edit),
+                                  ),
+                                  Icon(Icons.remove),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Container(
+                            height: 50.0,
+                            child: Center(child: Text("${task.subject}")),
+                          ),
+                          Container(
+                            height: 140.0,
+                            child: Center(child: Text("${task.description}")),
+                          )
+                        ],
+                      ),
                     );
+                    // return ListTile(
+                    //   title: Text("${task.subject}"),
+                    //   subtitle: Text("${task.description}"),
+                    // );
                   }),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
