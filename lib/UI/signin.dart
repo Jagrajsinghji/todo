@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:floaty_head/floaty_head.dart';
+// import 'package:floaty_head/floaty_head.dart';
 import 'package:todo/UI/widgets/custom_shape.dart';
 import 'package:todo/UI/widgets/responsive_ui.dart';
 import 'package:todo/UI/widgets/textformfield.dart';
@@ -25,188 +25,188 @@ class SignInScreen extends StatefulWidget {
 
 class _SignInScreenState extends State<SignInScreen> {
 
-  final FloatyHead floatyHead = FloatyHead();
-
-  final header = FloatyHeadHeader(
-    title: FloatyHeadText(
-      text: "Outgoing Call",
-      fontSize: 10,
-      textColor: Colors.black45,
-      fontWeight: FontWeight.normal,
-      padding: FloatyHeadPadding(
-        bottom: 4,
-        left: 5,
-        right: 5,
-        top: 5,
-      ),
-    ),
-    padding: FloatyHeadPadding.setSymmetricPadding(12, 12),
-    subTitle: FloatyHeadText(
-      text: "8989898989",
-      fontSize: 14,
-      fontWeight: FontWeight.bold,
-      padding: FloatyHeadPadding(
-        bottom: 4,
-        left: 5,
-        right: 5,
-        top: 5,
-      ),
-      textColor: Colors.black87,
-    ),
-    decoration: FloatyHeadDecoration(startColor: Colors.grey[100]),
-    button: FloatyHeadButton(
-        text: FloatyHeadText(
-          fontWeight: FontWeight.bold,
-          text: "Personal",
-          fontSize: 10,
-          textColor: Colors.black45,
-          padding: FloatyHeadPadding(
-            bottom: 4,
-            left: 5,
-            right: 5,
-            top: 5,
-          ),
-        ),
-        tag: "personal_btn"),
-  );
-
-  final body = FloatyHeadBody(
-    rows: [
-      EachRow(
-        columns: [
-          EachColumn(
-            text: FloatyHeadText(
-              fontWeight: FontWeight.bold,
-              text: "Updated body",
-              fontSize: 12,
-              textColor: Colors.black45,
-              padding: FloatyHeadPadding(
-                bottom: 4,
-                left: 5,
-                right: 5,
-                top: 5,
-              ),
-            ),
-          ),
-        ],
-        gravity: ContentGravity.center,
-      ),
-      EachRow(columns: [
-        EachColumn(
-          text: FloatyHeadText(
-            text: "Updated long data of the body",
-            fontSize: 12,
-            textColor: Colors.black87,
-            fontWeight: FontWeight.bold,
-            padding: FloatyHeadPadding(
-              bottom: 4,
-              left: 5,
-              right: 5,
-              top: 5,
-            ),
-          ),
-          padding: FloatyHeadPadding.setSymmetricPadding(6, 8),
-          decoration: FloatyHeadDecoration(
-              startColor: Colors.black12, borderRadius: 25.0),
-          margin: FloatyHeadMargin(top: 4),
-        ),
-      ], gravity: ContentGravity.center),
-      EachRow(
-        columns: [
-          EachColumn(
-            text: FloatyHeadText(
-              text: "Notes",
-              fontSize: 10,
-              textColor: Colors.black45,
-              fontWeight: FontWeight.normal,
-              padding: FloatyHeadPadding(
-                bottom: 4,
-                left: 5,
-                right: 5,
-                top: 5,
-              ),
-            ),
-          ),
-        ],
-        gravity: ContentGravity.left,
-        margin: FloatyHeadMargin(top: 8),
-      ),
-      EachRow(
-        columns: [
-          EachColumn(
-            text: FloatyHeadText(
-              text: "Updated random notes.",
-              fontSize: 13,
-              textColor: Colors.black54,
-              fontWeight: FontWeight.bold,
-              padding: FloatyHeadPadding(
-                bottom: 4,
-                left: 5,
-                right: 5,
-                top: 5,
-              ),
-            ),
-          ),
-        ],
-        gravity: ContentGravity.left,
-      ),
-    ],
-    padding: FloatyHeadPadding(left: 16, right: 16, bottom: 12, top: 12),
-  );
-
-  final footer = FloatyHeadFooter(
-    buttons: [
-      FloatyHeadButton(
-        text: FloatyHeadText(
-          text: "Simple button",
-          fontSize: 12,
-          textColor: Color.fromRGBO(250, 139, 97, 1),
-          padding: FloatyHeadPadding(
-            bottom: 4,
-            left: 5,
-            right: 5,
-            top: 5,
-          ),
-          fontWeight: FontWeight.normal,
-        ),
-        tag: "simple_button",
-        padding: FloatyHeadPadding(left: 10, right: 10, bottom: 10, top: 10),
-        width: 0,
-        height: FloatyHeadButton.WRAP_CONTENT,
-        decoration: FloatyHeadDecoration(
-            startColor: Colors.white,
-            endColor: Colors.white,
-            borderWidth: 0,
-            borderRadius: 0.0),
-      ),
-      FloatyHeadButton(
-        text: FloatyHeadText(
-          fontWeight: FontWeight.normal,
-          padding: FloatyHeadPadding(
-            bottom: 4,
-            left: 5,
-            right: 5,
-            top: 5,
-          ),
-          text: "Focus button",
-          fontSize: 12,
-          textColor: Colors.white,
-        ),
-        tag: "focus_button",
-        width: 0,
-        padding: FloatyHeadPadding(left: 10, right: 10, bottom: 10, top: 10),
-        height: FloatyHeadButton.WRAP_CONTENT,
-        decoration: FloatyHeadDecoration(
-            startColor: Color.fromRGBO(250, 139, 97, 1),
-            endColor: Color.fromRGBO(247, 28, 88, 1),
-            borderWidth: 0,
-            borderRadius: 30.0),
-      )
-    ],
-    padding: FloatyHeadPadding(left: 16, right: 16, bottom: 12),
-    decoration: FloatyHeadDecoration(startColor: Colors.white),
-    buttonsPosition: ButtonPosition.center,
-  );
+  // final FloatyHead floatyHead = FloatyHead();
+  //
+  // final header = FloatyHeadHeader(
+  //   title: FloatyHeadText(
+  //     text: "Outgoing Call",
+  //     fontSize: 10,
+  //     textColor: Colors.black45,
+  //     fontWeight: FontWeight.normal,
+  //     padding: FloatyHeadPadding(
+  //       bottom: 4,
+  //       left: 5,
+  //       right: 5,
+  //       top: 5,
+  //     ),
+  //   ),
+  //   padding: FloatyHeadPadding.setSymmetricPadding(12, 12),
+  //   subTitle: FloatyHeadText(
+  //     text: "8989898989",
+  //     fontSize: 14,
+  //     fontWeight: FontWeight.bold,
+  //     padding: FloatyHeadPadding(
+  //       bottom: 4,
+  //       left: 5,
+  //       right: 5,
+  //       top: 5,
+  //     ),
+  //     textColor: Colors.black87,
+  //   ),
+  //   decoration: FloatyHeadDecoration(startColor: Colors.grey[100]),
+  //   button: FloatyHeadButton(
+  //       text: FloatyHeadText(
+  //         fontWeight: FontWeight.bold,
+  //         text: "Personal",
+  //         fontSize: 10,
+  //         textColor: Colors.black45,
+  //         padding: FloatyHeadPadding(
+  //           bottom: 4,
+  //           left: 5,
+  //           right: 5,
+  //           top: 5,
+  //         ),
+  //       ),
+  //       tag: "personal_btn"),
+  // );
+  //
+  // final body = FloatyHeadBody(
+  //   rows: [
+  //     EachRow(
+  //       columns: [
+  //         EachColumn(
+  //           text: FloatyHeadText(
+  //             fontWeight: FontWeight.bold,
+  //             text: "Updated body",
+  //             fontSize: 12,
+  //             textColor: Colors.black45,
+  //             padding: FloatyHeadPadding(
+  //               bottom: 4,
+  //               left: 5,
+  //               right: 5,
+  //               top: 5,
+  //             ),
+  //           ),
+  //         ),
+  //       ],
+  //       gravity: ContentGravity.center,
+  //     ),
+  //     EachRow(columns: [
+  //       EachColumn(
+  //         text: FloatyHeadText(
+  //           text: "Updated long data of the body",
+  //           fontSize: 12,
+  //           textColor: Colors.black87,
+  //           fontWeight: FontWeight.bold,
+  //           padding: FloatyHeadPadding(
+  //             bottom: 4,
+  //             left: 5,
+  //             right: 5,
+  //             top: 5,
+  //           ),
+  //         ),
+  //         padding: FloatyHeadPadding.setSymmetricPadding(6, 8),
+  //         decoration: FloatyHeadDecoration(
+  //             startColor: Colors.black12, borderRadius: 25.0),
+  //         margin: FloatyHeadMargin(top: 4),
+  //       ),
+  //     ], gravity: ContentGravity.center),
+  //     EachRow(
+  //       columns: [
+  //         EachColumn(
+  //           text: FloatyHeadText(
+  //             text: "Notes",
+  //             fontSize: 10,
+  //             textColor: Colors.black45,
+  //             fontWeight: FontWeight.normal,
+  //             padding: FloatyHeadPadding(
+  //               bottom: 4,
+  //               left: 5,
+  //               right: 5,
+  //               top: 5,
+  //             ),
+  //           ),
+  //         ),
+  //       ],
+  //       gravity: ContentGravity.left,
+  //       margin: FloatyHeadMargin(top: 8),
+  //     ),
+  //     EachRow(
+  //       columns: [
+  //         EachColumn(
+  //           text: FloatyHeadText(
+  //             text: "Updated random notes.",
+  //             fontSize: 13,
+  //             textColor: Colors.black54,
+  //             fontWeight: FontWeight.bold,
+  //             padding: FloatyHeadPadding(
+  //               bottom: 4,
+  //               left: 5,
+  //               right: 5,
+  //               top: 5,
+  //             ),
+  //           ),
+  //         ),
+  //       ],
+  //       gravity: ContentGravity.left,
+  //     ),
+  //   ],
+  //   padding: FloatyHeadPadding(left: 16, right: 16, bottom: 12, top: 12),
+  // );
+  //
+  // final footer = FloatyHeadFooter(
+  //   buttons: [
+  //     FloatyHeadButton(
+  //       text: FloatyHeadText(
+  //         text: "Simple button",
+  //         fontSize: 12,
+  //         textColor: Color.fromRGBO(250, 139, 97, 1),
+  //         padding: FloatyHeadPadding(
+  //           bottom: 4,
+  //           left: 5,
+  //           right: 5,
+  //           top: 5,
+  //         ),
+  //         fontWeight: FontWeight.normal,
+  //       ),
+  //       tag: "simple_button",
+  //       padding: FloatyHeadPadding(left: 10, right: 10, bottom: 10, top: 10),
+  //       width: 0,
+  //       height: FloatyHeadButton.WRAP_CONTENT,
+  //       decoration: FloatyHeadDecoration(
+  //           startColor: Colors.white,
+  //           endColor: Colors.white,
+  //           borderWidth: 0,
+  //           borderRadius: 0.0),
+  //     ),
+  //     FloatyHeadButton(
+  //       text: FloatyHeadText(
+  //         fontWeight: FontWeight.normal,
+  //         padding: FloatyHeadPadding(
+  //           bottom: 4,
+  //           left: 5,
+  //           right: 5,
+  //           top: 5,
+  //         ),
+  //         text: "Focus button",
+  //         fontSize: 12,
+  //         textColor: Colors.white,
+  //       ),
+  //       tag: "focus_button",
+  //       width: 0,
+  //       padding: FloatyHeadPadding(left: 10, right: 10, bottom: 10, top: 10),
+  //       height: FloatyHeadButton.WRAP_CONTENT,
+  //       decoration: FloatyHeadDecoration(
+  //           startColor: Color.fromRGBO(250, 139, 97, 1),
+  //           endColor: Color.fromRGBO(247, 28, 88, 1),
+  //           borderWidth: 0,
+  //           borderRadius: 30.0),
+  //     )
+  //   ],
+  //   padding: FloatyHeadPadding(left: 16, right: 16, bottom: 12),
+  //   decoration: FloatyHeadDecoration(startColor: Colors.white),
+  //   buttonsPosition: ButtonPosition.center,
+  // );
   double _height;
   double _width;
   double _pixelRatio;
@@ -220,8 +220,8 @@ class _SignInScreenState extends State<SignInScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    FloatyHead.registerOnClickListener(callBack);
-    floatyHead.openBubble();
+    // FloatyHead.registerOnClickListener(callBack);
+    // floatyHead.openBubble();
   }
 
 
@@ -245,7 +245,7 @@ class _SignInScreenState extends State<SignInScreen> {
               welcomeTextRow(),
               signInTextRow(),
               form(),
-              forgetPassTextRow(),
+              // forgetPassTextRow(),
               SizedBox(height: _height / 12),
               button(),
               signUpTextRow(),
@@ -255,19 +255,19 @@ class _SignInScreenState extends State<SignInScreen> {
       ),
     );
   }
-  void setCustomHeader() {
-    floatyHead.updateFloatyHeadContent(
-      header: header,
-      body: body,
-      footer: footer,
-    );
-  }
-
-  void closeFloatyHead() {
-    if (floatyHead.isOpen) {
-      floatyHead.closeHead();
-    }
-  }
+  // void setCustomHeader() {
+  //   floatyHead.updateFloatyHeadContent(
+  //     header: header,
+  //     body: body,
+  //     footer: footer,
+  //   );
+  // }
+  //
+  // void closeFloatyHead() {
+  //   if (floatyHead.isOpen) {
+  //     floatyHead.closeHead();
+  //   }
+  // }
 
   Widget clipShape() {
     //double height = MediaQuery.of(context).size.height;
@@ -420,10 +420,8 @@ class _SignInScreenState extends State<SignInScreen> {
       elevation: 0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
       onPressed: () {
+
         print("Routing to your account");
-        Scaffold
-            .of(context)
-            .showSnackBar(SnackBar(content: Text('Login Successful')));
         Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext c){
           return MyHomePage();
         }));

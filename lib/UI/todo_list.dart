@@ -3,6 +3,8 @@ import 'package:todo/Bloc/tasks_bloc.dart';
 import 'package:todo/Models/Task.dart';
 import 'package:todo/Utils/retry_widget.dart';
 
+import 'create_todo.dart';
+
 class ToDoList extends StatefulWidget {
   const ToDoList({Key key}) : super(key: key);
 
@@ -76,7 +78,12 @@ class _ToDoListState extends State<ToDoList> {
                   }),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: () {},
+        onPressed: () async{
+          var d= await Navigator.push(context,MaterialPageRoute(builder: (c)=>CreateToDO()));
+          if(d !=null && d){
+            getList();
+          }
+        },
       ),
     );
   }

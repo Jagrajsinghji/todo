@@ -5,6 +5,8 @@ import 'package:todo/UI/widgets/responsive_ui.dart';
 import 'package:todo/UI/widgets/textformfield.dart';
 import 'package:todo/constants/constants.dart';
 
+import 'homepage.dart';
+
 
 
 class SignUpScreen extends StatefulWidget {
@@ -223,6 +225,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
       onPressed: () {
         print("Routing to your account");
+        Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext c){
+          return MyHomePage();
+        }));
       },
       textColor: Colors.white,
       padding: EdgeInsets.all(0.0),

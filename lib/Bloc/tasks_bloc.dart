@@ -18,7 +18,7 @@ class TasksBloc {
   /// create task
   Future<Response> createTask(Task task) {
     return APIBase.baseFunction(() {
-      return _dio.post(APIRoutes.CREATE_TASK, data: task.toMap());
+      return _dio.post(APIRoutes.CREATE_TASK, data: {"fields": task.toMap()});
     });
   }
 

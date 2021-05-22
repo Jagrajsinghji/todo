@@ -3,6 +3,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name="io.flutter.app.FlutterApplication"
         android:label="todo"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">

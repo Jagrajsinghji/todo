@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:todo/Utils/api_base.dart';
+import 'package:todo/Utils/api_routes.dart';
 
 class AuthBloc {
   static AuthBloc _instance;
@@ -13,5 +14,17 @@ class AuthBloc {
     return _instance;
   }
 
-//TODO: implement APIs, jagga
+  Future<Response> signUp(String email, String pass, String username) {
+    return APIBase.baseFunction(() {
+      return _dio.post(APIRoutes.SIGN_UP,
+          data: {"email": email, "password": pass, "username": username});
+    });
+  }
+
+  Future<Response> signIn(String email, String pass) {
+    return APIBase.baseFunction(() {
+      return _dio
+          .post(APIRoutes.SIGN_UP, data: {"email": email, "password": pass});
+    });
+  }
 }

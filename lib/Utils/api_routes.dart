@@ -27,4 +27,14 @@ class APIRoutes {
   ///GET request
   static const GET_TASK_LIST =
       "https://sleepy-waters-51339.herokuapp.com/api/list";
+
+  ///POST
+  ///body => username,password
+  static const LOGIN =
+      "https://food-ordering-backend-mysql.herokuapp.com/api/auth/signin";
+
+  ///POST
+  ///body => username,password ,email
+  static const SIGN_UP =
+      "https://food-ordering-backend-mysql.herokuapp.com/api/auth/signup";
 }
